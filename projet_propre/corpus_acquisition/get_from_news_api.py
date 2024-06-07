@@ -58,12 +58,14 @@ def get_articles(keywords=None,
         lang=lang,
         dateStart=dateStart,
         dateEnd=dateEnd)
-    df = pd.DataFrame()
-    for article in q.execQuery(er, sortBy = "date", 
+    q_execQuery = q.execQuery(er, sortBy = "date", 
                                returnInfo = ReturnInfo(articleInfo = ArticleInfoFlags(concepts = True, categories = True)),
-                               maxItems = maxRows) :
+                               maxItems = maxRows)
+    print(q_execQuery)
+    df = pd.DataFrame()
+    for article in q_execQuery :
         # Convertir l'article en ligne de DataFrame
-        df_row = df_row = pd.DataFrame({
+        df_row = pd.DataFrame({
             'uri': [article.get('uri', None)],
             'lang': [article.get('lang', None)],
             'isDuplicate': [article.get('isDuplicate', None)],

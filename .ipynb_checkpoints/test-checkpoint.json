@@ -1,0 +1,629 @@
+{
+  "type": "object",
+  "properties": {
+    "articles": {
+      "type": "object",
+      "properties": {
+        "totalResults": {
+          "type": "integer"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "pages": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "uri": {
+                "type": "string"
+              },
+              "lang": {
+                "type": "string"
+              },
+              "isDuplicate": {
+                "type": "boolean"
+              },
+              "date": {
+                "type": "string"
+              },
+              "time": {
+                "type": "string"
+              },
+              "dateTime": {
+                "type": "string"
+              },
+              "sim": {
+                "type": "double"
+              },
+              "url": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "body": {
+                "type": "string"
+              },
+              "source": {
+                "type": "object",
+                "properties": {
+                  "uri": {
+                    "type": "string"
+                  },
+                  "dataType": {
+                    "type": "string"
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "location": {
+                    "type": "object",
+                    "properties": {
+                      "type": {
+                        "type": "string"
+                      },
+                      "label": {
+                        "type": "object",
+                        "properties": {
+                          "eng": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "locationValidated": {
+                    "type": "boolean"
+                  },
+                  "ranking": {
+                    "type": "object",
+                    "properties": {
+                      "importanceRank": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              },
+              "concepts": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "uri": {
+                      "type": "string"
+                    },
+                    "type": {
+                      "type": "string"
+                    },
+                    "score": {
+                      "type": "integer"
+                    },
+                    "label": {
+                      "type": "object",
+                      "properties": {
+                        "eng": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "image": {
+                      "type": "string"
+                    },
+                    "synonyms": {
+                      "type": "object",
+                      "properties": {}
+                    },
+                    "trendingScore": {
+                      "type": "object",
+                      "properties": {
+                        "news": {
+                          "type": "object",
+                          "properties": {
+                            "score": {
+                              "type": "double"
+                            },
+                            "testPopFq": {
+                              "type": "integer"
+                            },
+                            "nullPopFq": {
+                              "type": "integer"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "location": {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "label": {
+                          "type": "object",
+                          "properties": {
+                            "eng": {
+                              "type": "string"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "categories": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "uri": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "wgt": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "links": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "videos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "image": {
+                "type": "string"
+              },
+              "duplicateList": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "originalArticle": {
+                "type": "string"
+              },
+              "eventUri": {
+                "type": "string"
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "object",
+                    "properties": {
+                      "eng": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "extractedDates": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "amb": {
+                      "type": "boolean"
+                    },
+                    "imp": {
+                      "type": "boolean"
+                    },
+                    "date": {
+                      "type": "string"
+                    },
+                    "textStart": {
+                      "type": "integer"
+                    },
+                    "textEnd": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              },
+              "shares": {
+                "type": "object",
+                "properties": {
+                  "facebook": {
+                    "type": "integer"
+                  }
+                }
+              },
+              "wgt": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "uriWgtList": {
+      "type": "object",
+      "properties": {
+        "totalResults": {
+          "type": "integer"
+        },
+        "page": {
+          "type": "integer"
+        },
+        "count": {
+          "type": "integer"
+        },
+        "pages": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "conceptAggr": {
+      "type": "object",
+      "properties": {
+        "warning": {
+          "type": "string"
+        },
+        "usedResults": {
+          "type": "integer"
+        },
+        "totalResults": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "uri": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "score": {
+                "type": "integer"
+              },
+              "label": {
+                "type": "object",
+                "properties": {
+                  "eng": {
+                    "type": "string"
+                  }
+                }
+              },
+              "image": {
+                "type": "string"
+              },
+              "synonyms": {
+                "type": "object",
+                "properties": {}
+              },
+              "trendingScore": {
+                "type": "object",
+                "properties": {
+                  "news": {
+                    "type": "object",
+                    "properties": {
+                      "score": {
+                        "type": "double"
+                      },
+                      "testPopFq": {
+                        "type": "integer"
+                      },
+                      "nullPopFq": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "object",
+                    "properties": {
+                      "eng": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "keywordAggr": {
+      "type": "object",
+      "properties": {
+        "warning": {
+          "type": "string"
+        },
+        "usedResults": {
+          "type": "integer"
+        },
+        "totalResults": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "keyword": {
+                "type": "string"
+              },
+              "weight": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      }
+    },
+    "timeAggr": {
+      "type": "object",
+      "properties": {
+        "warning": {
+          "type": "string"
+        },
+        "usedResults": {
+          "type": "integer"
+        },
+        "totalResults": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "date": {
+                "type": "string"
+              },
+              "count": {
+                "type": "double"
+              }
+            }
+          }
+        }
+      }
+    },
+    "sourceAggr": {
+      "type": "object",
+      "properties": {
+        "warning": {
+          "type": "string"
+        },
+        "usedResults": {
+          "type": "integer"
+        },
+        "totalResults": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "uri": {
+                "type": "string"
+              },
+              "dataType": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "object",
+                    "properties": {
+                      "eng": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              },
+              "locationValidated": {
+                "type": "boolean"
+              },
+              "ranking": {
+                "type": "object",
+                "properties": {
+                  "importanceRank": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "conceptGraph": {
+      "type": "object",
+      "properties": {
+        "warning": {
+          "type": "string"
+        },
+        "usedResults": {
+          "type": "integer"
+        },
+        "totalResults": {
+          "type": "integer"
+        },
+        "concepts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "uri": {
+                "type": "string"
+              },
+              "type": {
+                "type": "string"
+              },
+              "score": {
+                "type": "integer"
+              },
+              "label": {
+                "type": "object",
+                "properties": {
+                  "eng": {
+                    "type": "string"
+                  }
+                }
+              },
+              "image": {
+                "type": "string"
+              },
+              "synonyms": {
+                "type": "object",
+                "properties": {}
+              },
+              "trendingScore": {
+                "type": "object",
+                "properties": {
+                  "news": {
+                    "type": "object",
+                    "properties": {
+                      "score": {
+                        "type": "double"
+                      },
+                      "testPopFq": {
+                        "type": "integer"
+                      },
+                      "nullPopFq": {
+                        "type": "integer"
+                      }
+                    }
+                  }
+                }
+              },
+              "location": {
+                "type": "object",
+                "properties": {
+                  "type": {
+                    "type": "string"
+                  },
+                  "label": {
+                    "type": "object",
+                    "properties": {
+                      "eng": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "uri1": {
+                "type": "string"
+              },
+              "uri2": {
+                "type": "string"
+              },
+              "score": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      }
+    },
+    "categoryAggr": {
+      "type": "object",
+      "properties": {
+        "warning": {
+          "type": "string"
+        },
+        "usedResults": {
+          "type": "integer"
+        },
+        "totalResults": {
+          "type": "integer"
+        },
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": {
+                "type": "string",
+                "example": "dmoz/Business/Investing/Stocks_and_Bonds"
+              },
+              "score": {
+                "type": "double",
+                "example": 0.123
+              }
+            }
+          }
+        }
+      }
+    },
+    "recentActivityArticles": {
+      "type": "object",
+      "properties": {
+        "currTime": {
+          "type": "string"
+        },
+        "activity": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {}
+          }
+        }
+      }
+    }
+  }
+}
